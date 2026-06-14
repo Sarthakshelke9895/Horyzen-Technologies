@@ -79,11 +79,14 @@ const Why = () => {
         {reasons.map((item, index) => (
           <div className="why-card" key={index}>
 
+            <div className="why-icon-name">
             <div className="why-icon">
               {item.icon}
             </div>
 
             <h3>{item.title}</h3>
+            </div>
+
 
             <p>{item.description}</p>
 

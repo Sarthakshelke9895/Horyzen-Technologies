@@ -761,3 +761,242 @@ select:-webkit-autofill {
     color: var(--gold);
     letter-spacing: .5px;
 }
+/* ===========================
+        TABLET
+=========================== */
+
+@media (max-width:992px){
+
+
+
+.apply-container{
+    grid-template-columns:1fr;
+    gap:50px;
+}
+
+.apply-left{
+    height:auto;
+}
+
+.apply-left h1{
+    font-size:42px;
+}
+
+.hero-description{
+    max-width:100%;
+}
+
+}
+
+/* ===========================
+        MOBILE
+=========================== */
+
+@media (max-width:768px){
+
+.apply-page{
+    margin-top:65px;
+   
+}
+
+.apply-container{
+    grid-template-columns:1fr;
+    gap:40px;
+    padding: 0px 10px;
+}
+
+.apply-left{
+    height:auto;
+}
+
+.apply-left h1{
+    font-size:32px;
+    line-height:1.2;
+}
+
+.apply-left p{
+    font-size:14px;
+    line-height:1.8;
+    text-align: justify;
+    hyphens: auto;
+
+}
+
+.benefits{
+    gap:12px;
+    margin-top: 1px;
+}
+
+.benefit{
+    padding:16px;
+    font-size:14px;
+}
+
+.apply-right form{
+    gap:18px;
+}
+
+.input-group input,
+.input-group textarea,
+.input-group select{
+    font-size:15px;
+    padding:16px 0 10px;
+}
+
+.input-group label{
+    font-size:15px;
+}
+
+.upload-box{
+    padding:18px;
+}
+
+.upload-header{
+    gap:12px;
+}
+
+.upload-icon{
+    width:48px;
+    height:48px;
+    font-size:20px;
+}
+
+.upload-text h4{
+    font-size:15px;
+}
+
+.upload-text p{
+    font-size:13px;
+}
+
+.file-name{
+    font-size:13px;
+}
+
+.progress-info span{
+    font-size:12px;
+}
+
+.apply-submit{
+    height:54px;
+    font-size:15px;
+}
+
+.success-toast{
+    left:15px;
+    right:15px;
+    top:15px;
+    width:auto;
+    padding:16px;
+}
+
+.toast-icon{
+    width:40px;
+    height:40px;
+    font-size:16px;
+}
+
+.success-toast h4{
+    font-size:15px;
+}
+
+.success-toast p{
+    font-size:13px;
+}
+
+}
+
+/* ===========================
+      SMALL MOBILE
+=========================== */
+
+@media (max-width:480px){
+
+.apply-page{
+    padding:25px 14px 35px;
+}
+
+.apply-left h1{
+    font-size:28px;
+}
+
+.apply-left p{
+    font-size:14px;
+}
+
+.benefit{
+    padding:14px;
+    font-size:13px;
+}
+
+.input-group input,
+.input-group textarea,
+.input-group select{
+    font-size:14px;
+}
+
+.upload-box{
+    padding:15px;
+}
+
+.upload-icon{
+    width:42px;
+    height:42px;
+    font-size:18px;
+}
+
+.upload-text h4{
+    font-size:14px;
+}
+
+.upload-text p{
+    font-size:12px;
+}
+
+.apply-submit{
+    height:50px;
+    font-size:14px;
+}
+
+.success-toast{
+    padding:14px;
+}
+
+.toast-icon{
+    width:36px;
+    height:36px;
+}
+
+}
+
+/* ===========================
+      EXTRA SMALL
+=========================== */
+
+@media (max-width:360px){
+
+.apply-left h1{
+    font-size:24px;
+}
+
+.apply-left p{
+    font-size:13px;
+}
+
+.benefit{
+    font-size:12px;
+}
+
+.upload-text h4{
+    font-size:13px;
+}
+
+.upload-text p{
+    font-size:11px;
+}
+
+.apply-submit{
+    font-size:13px;
+}
+
+}

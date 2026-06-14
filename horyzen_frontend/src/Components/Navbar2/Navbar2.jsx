@@ -27,7 +27,7 @@ const Navbar2 = () => {
 
                    <img src={HoryzenLogo} alt="HoryzenLogo" className="logo" id="web-logo" />
                 <h1>
-                    HORYZEN TECHNOLOGIES
+                    HORYZEN <br/>TECHNOLOGIES
                 </h1>
               </div>
     </div>

@@ -166,14 +166,55 @@
 
   .about-section{
     flex-direction: column;
-    padding: 100px 25px;
+    padding: 40px 30px;
+    
   }
 
   .about-features{
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2,1fr)
   }
 
   .about-image-card{
-    height: 350px;
+    height: 310px;
+    margin: 0;
+  }
+  .floating-badge-about{
+    padding: 8px 16px ;
+  }
+
+
+  .section-tag{
+    font-size: 16px;
+  
+  }
+ 
+  .about-section{
+    gap: 20px;
+  }
+  .about-title{
+    font-size: 20px;
+    margin-top: 10px;
+  }
+  .about-description{
+    font-size: 14px;
+    hyphens: auto;
+    margin-top: -15px;
+  }
+.about-features{
+    margin-top:-20px;
+  }
+  .feature-card{
+    padding:6px;
+    border-radius: 10px;
+    
+  }
+  .feature-card h4{
+    font-size: 15px;
+    hyphens: auto;
+    color: var(--gold);
+  }
+  .feature-card p{
+    hyphens: auto;
+    font-size: 14px;
   }
 }

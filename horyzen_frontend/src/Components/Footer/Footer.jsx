@@ -68,14 +68,11 @@ const Footer = () => {
           </div>
 
         </div>
-
+  <div className="frid">
+    
         {/* QUICK LINKS */}
-
         <div className="footer-links">
-
           <h3>Quick Links</h3>
-
-
           <Link
             to="home"
             smooth
@@ -193,13 +190,14 @@ const Footer = () => {
         </div>
 
       </div>
+       </div>
 
       {/* BOTTOM */}
 
       <div className="footer-bottom">
 
         <p>
-          © 2026 Horyzen Technologies.
+          © 2026 Horyzen Technologies<br/>
           All Rights Reserved.
         </p>
 

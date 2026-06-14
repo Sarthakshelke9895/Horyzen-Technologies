@@ -80,11 +80,14 @@ const SDLC = () => {
         {phases.map((phase, index) => (
           <div key={index} className="timeline-card">
 
+        <div className="number-and-text">
             <span className="phase-number">
               {phase.number}
             </span>
 
             <h3>{phase.title}</h3>
+        </div>
+
 
             <p>{phase.description}</p>
 

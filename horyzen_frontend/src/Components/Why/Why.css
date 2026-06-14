@@ -18,7 +18,7 @@
 .why-card{
     position:relative;
 
-    padding:35px;
+    padding:30px;
 
     border-radius:24px;
 
@@ -104,6 +104,11 @@
 
     line-height:1.8;
 }
+.why-icon-name{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
 
 @media(max-width:992px){
 
@@ -116,10 +121,30 @@
 @media(max-width:768px){
 
     .why-section{
-        padding:100px 25px;
+        padding:40px 30px;
     }
 
     .why-grid{
         grid-template-columns:1fr;
+        margin-top: 30px;
+    }
+    .why-card{
+        border-radius: 10px;
+        padding: 10px;
+    }
+    .why-icon{
+        font-size: 16px;
+        width: 45px;
+        height: 45px;
+        border-radius: 0px 10px 10px 10px;
+    }
+    .why-card h3{
+        color: var(--gold);
+        font-size: 16px;
+    }
+
+    .why-card p{
+        font-size: 14px;
+        margin-top: -10px;
     }
 }

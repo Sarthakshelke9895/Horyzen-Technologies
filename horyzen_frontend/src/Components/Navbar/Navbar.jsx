@@ -29,7 +29,7 @@ const Navbar = () => {
       <div className="auth-header" onClick={handlelogoclick}>
         <img src={HoryzenLogo} alt="HoryzenLogo" className="logo" id="web-logo" />
         <h1>
-            HORYZEN TECHNOLOGIES
+            HORYZEN <br />TECHNOLOGIES
         </h1>
       </div>
 

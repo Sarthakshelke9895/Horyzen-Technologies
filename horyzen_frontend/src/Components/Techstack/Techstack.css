@@ -1,75 +1,156 @@
-.tech-section{
-    background:black;
-    padding:50px 80px;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+.tech-section {
+  background: black;
+  padding: 40px 80px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.section-header{
+.section-header {
+  margin: auto;
+  text-align: left;
+}
+
+.section-title {
+  color: white;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 1.2;
+  margin-bottom: 15px;
+}
+
+.section-description {
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 1.8;
+  font-size: 16px;
+}
+
+.tech-grid {
+  margin-top: 70px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.tech-card {
+  padding: 35px 25px;
+  text-align: center;
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(216, 177, 90, 0.1);
+  backdrop-filter: blur(20px);
+  transition: 0.4s ease;
+}
+
+.tech-card:hover {
+  transform: translateY(-10px);
+  border-color: #D8B15A;
+  box-shadow: 0 20px 40px rgba(216, 177, 90, 0.1);
+}
+
+.tech-icon {
+  font-size: 3rem;
+  color: #D8B15A;
+  margin-bottom: 18px;
+}
+
+.tech-card h3 {
+  color: white;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.tech-card p {
+  color: rgba(255,255,255,.7);
+  line-height: 1.7;
+  font-size: 15px;
+}
+
+/* ---------- Large Laptop ---------- */
+
+@media (max-width: 1200px) {
+  .tech-section {
+    padding: 60px 50px;
+  }
+
+  .tech-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .section-title {
+    font-size: 36px;
+  }
+}
+
+/* ---------- Tablet ---------- */
+
+@media (max-width: 992px) {
+  .tech-section {
+    padding: 60px 35px;
+  }
+
+  .tech-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
+  }
+
+  .section-title {
+    font-size: 34px;
+  }
+
+  .section-description {
+    font-size: 15px;
+  }
+
+  .tech-card {
+    padding: 30px 22px;
+  }
+}
+
+/* ---------- Mobile ---------- */
+
+@media (max-width: 768px) {
+  .tech-section {
+    padding: 40px 30px;
+  }
+
+  .section-header {
     text-align:left;
+
+
+  }
+
+  .section-title {
+    font-size: 20px;
+    text-align: left;
+    margin-top: 10px;
+  }
+
+  .section-description {
+    font-size: 14px;
+    line-height: 1.7;
+    margin-top: -10px;
+    text-align: justify;
+    hyphens: auto;
+  }
+
+  .tech-grid {
+    grid-template-columns: repeat(2,1fr);
+    margin-top: 15px;
+    gap: 18px;
+  }
+
+  .tech-card {
+    padding: 15px 22px;
+    border-radius: 10px;
+  }
+
+  .tech-icon {
+    font-size: 2.7rem;
+    margin: 0;
+
+  }
+
+  .tech-card h3 {
+    font-size: 20px;
     
-    margin:auto;
-}
-
-.section-title{
-    color:white;
-    font-size:40px;
-    font-weight: 500;
-  
-    
-}
-
-.section-description{
-    color:rgba(255,255,255,.7);
-    line-height:1.8;
-   
-}
-
-.tech-grid{
-    margin-top:70px;
-
-    display:grid;
-    grid-template-columns:
-    repeat(4,1fr);
-
-    gap:24px;
-}
-
-.tech-card{
-    padding:35px;
-
-    text-align:center;
-
-    border-radius:24px;
-
-    background:
-    rgba(255,255,255,.04);
-
-    border:
-    1px solid rgba(216,177,90,.1);
-
-    backdrop-filter:blur(20px);
-
-    transition:.4s ease;
-}
-
-.tech-card:hover{
-    transform:
-    translateY(-10px);
-
-    border-color:#D8B15A;
-
-    box-shadow:
-    0 20px 40px rgba(216,177,90,.1);
-}
-
-.tech-icon{
-    font-size:3rem;
-
-    color:#D8B15A;
-
-    margin-bottom:15px;
-}
-
-.tech-card h3{
-    color:white;
+  }
 }
