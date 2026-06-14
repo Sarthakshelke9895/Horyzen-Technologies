@@ -473,9 +473,7 @@ flex-direction:column;
 align-items: center;
 }
 
-.btn{
-width:80%;
-}
+
 
 .vision-wrapper{
     display: flex;
@@ -578,9 +576,16 @@ padding:9px 16px;
 }
 
 .btn{
-padding:14px;
-font-size:14px;
+    padding:14px 60px;
+    border-radius:14px;
+    font-size:15px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.35s ease;
 }
+
+
+
 
 .vision-card{
 padding:20px;
@@ -589,37 +594,6 @@ border-radius:20px;
 
 .card-section h3{
 font-size:20px;
-}
-
-}
-
-/* ========================= */
-
-@media (max-width:360px){
-
-.hero-title{
-font-size:25px;
-}
-
-.hero-description{
-font-size:13px;
-}
-
-.hero-badge{
-font-size:11px;
-}
-
-.btn{
-font-size:13px;
-padding:13px;
-}
-
-.card-section h3{
-font-size:18px;
-}
-
-.card-section p{
-font-size:13px;
 }
 
 }

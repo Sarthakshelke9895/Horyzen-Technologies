@@ -3,6 +3,7 @@ import React from "react";
 import growth from '../../Assets/growth.png'
 import work from '../../Assets/work.png'
 import scale from '../../Assets/scale.png'
+import { Link } from "react-scroll";
 import './Hero.css'
 const Hero = () => {
   return (
@@ -28,18 +29,32 @@ const Hero = () => {
           </p>
 
           <div className="hero-buttons">
-            <button className="btn btn-primary">
+            <button className="btn btn-primary  ">
               View Portfolio
             </button>
-
+              <Link
+              to="services"
+              smooth={true}
+              duration={800}
+              offset={-70}
+            >
             <button className="btn btn-secondary">
               View Services
             </button>
+            </Link>
 
+            <Link
+              to="contact"
+              smooth={true}
+              duration={800}
+              offset={-70}
+            >
             <button className="btn btn-outline">
               Book Consultation
             </button>
+            </Link>
           </div>
+
 
         </div>
 

@@ -7,6 +7,9 @@ import {
   FaRobot,
   FaChartLine,
   FaGraduationCap,
+  FaPenNib,
+  FaMicrochip,
+  FaProjectDiagram,
 } from "react-icons/fa";
 
 
@@ -51,6 +54,24 @@ const services = [
     icon: <FaGraduationCap />,
     description:
       "Hands-on learning programs focused on real-world projects and industry skills.",
+  },
+    {
+    title: "Graphics Designing",
+    icon: <FaPenNib />,
+    description:
+      "Creating visually stunning designs for digital and print media, including branding, marketing materials, and user interfaces.",
+  },
+      {
+    title: "Machine Learning",
+    icon: <FaMicrochip />,
+    description:
+      "Building predictive models and intelligent systems that learn from data to drive insights and automation across various industries.",
+  },
+      {
+    title: "UI/UX Design",
+    icon: <FaProjectDiagram />,
+    description:
+      "Designing intuitive and engaging user interfaces and experiences that enhance usability and drive user satisfaction across digital platforms.",
   },
 ];
 

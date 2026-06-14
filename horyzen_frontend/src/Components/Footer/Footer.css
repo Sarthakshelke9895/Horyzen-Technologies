@@ -14,11 +14,18 @@
     grid-template-columns:
     1.5fr 1fr 1fr 1fr;
 
-    gap: 50px;
+    gap: 500px;
 
     padding: 0 80px 60px;
+   
 }
 
+.frid{
+    width:100%;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:130px;
+}
 /* BRAND */
 
 .footer-brand h2 {

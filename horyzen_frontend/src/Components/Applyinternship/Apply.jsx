@@ -522,8 +522,11 @@ const handleSubmit = async (e) => {
         <option>Frontend Development</option>
         <option>Backend Development</option>
         <option>Full Stack Development</option>
+        <option>Graphics Designing</option>
+        <option>Data Science and Analytics</option>
         <option>AI & Machine Learning</option>
         <option>UI/UX Design</option>
+        <option>Digital Marketing</option>
       </select>
 
       <label htmlFor="internship"  className={formData.internship ? "active" : ""}>
