@@ -1,0 +1,763 @@
+.apply-page{
+    margin-top: 70px;
+    background-color: var(--black);
+    padding:40px 80px;
+   
+}
+
+.apply-container{
+
+    display:grid;
+    
+    grid-template-columns:
+    1fr 1fr;
+    gap:60px;
+    background-color: var(--black);
+    align-items:center;
+}
+
+.apply-left{
+    height: 800px;
+}
+.apply-left h1{
+
+    color:white;
+    font-size:50px;
+    margin:20px 0;
+    margin-bottom: 1px;
+    font-weight: 450;
+}
+
+.apply-left h1 span{
+
+    color:#D8B15A;
+    font-family: 'Horyzen';
+   
+}
+
+.apply-left p{
+
+    color:
+    rgba(255,255,255,.7);
+
+    line-height:1.8;
+
+    margin-bottom:35px;
+}
+
+.benefits{
+
+    display:grid;
+
+    gap:15px;
+}
+
+.benefit{
+
+    padding:18px;
+
+    border-radius:16px;
+
+    background:
+    rgba(255,255,255,.04);
+
+    border:
+    1px solid rgba(216,177,90,.1);
+
+    color:white;
+}
+
+
+/* ==============================
+      APPLY FORM
+============================== */
+
+.apply-right {
+    width: 100%;
+}
+
+.apply-right form {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+/* ==============================
+      INPUT GROUP
+============================== */
+
+.input-group {
+    position: relative;
+    width: 100%;
+}
+
+/* ==============================
+      INPUTS
+============================== */
+
+.input-group input,
+.input-group textarea,
+.input-group select {
+
+    width: 100%;
+    padding: 18px 0 12px;
+
+    background: transparent;
+
+    border: none;
+
+    border-bottom: 1px solid rgba(255,255,255,.15);
+
+    color: var(--white);
+
+    font-size: 16px;
+
+    font-family: inherit;
+
+    outline: none;
+
+    transition: all .35s ease;
+
+}
+
+/* Label */
+
+.input-group label {
+
+    position: absolute;
+
+    top: 18px;
+
+    left: 0;
+
+    color: rgba(255,255,255,.45);
+
+    font-size: 16px;
+
+    pointer-events: none;
+
+    transition: .35s cubic-bezier(.22,1,.36,1);
+
+}
+
+/* Floating Label */
+
+.input-group input:focus + label,
+.input-group input:not(:placeholder-shown) + label,
+
+.input-group textarea:focus + label,
+.input-group textarea:not(:placeholder-shown) + label {
+
+    top: -10px;
+
+    font-size: 13px;
+
+    color: var(--gold);
+
+    letter-spacing: .5px;
+
+}
+
+/* Hide Placeholder */
+
+.input-group input::placeholder,
+.input-group textarea::placeholder {
+
+    color: transparent;
+
+}
+
+/* ==============================
+      PREMIUM UNDERLINE
+============================== */
+
+.input-group::after {
+
+    content: "";
+
+    position: absolute;
+
+    left: 50%;
+
+    bottom: 0;
+
+    width: 100%;
+
+    height: 2px;
+
+    border-radius: 100px;
+
+   background: var(--gold);
+box-shadow: none;
+
+    transform: translateX(-50%) scaleX(0);
+
+    transform-origin: center;
+
+    transition: transform .45s cubic-bezier(.22,1,.36,1);
+
+
+}
+
+.input-group:focus-within::after {
+
+    transform: translateX(-50%) scaleX(1);
+
+}
+
+/* Lift Effect */
+
+.input-group:focus-within input,
+.input-group:focus-within textarea,
+.input-group:focus-within select {
+
+    transform: translateY(-2px);
+
+}
+
+/* Soft Glow */
+
+.input-group:focus-within {
+
+    filter: drop-shadow(0 0 10px rgba(216,177,90,.15));
+
+}
+
+/* ==============================
+      SELECT
+============================== */
+
+.input-group select {
+
+    appearance: none;
+
+    cursor: pointer;
+
+}
+.file-name{
+
+    margin-top:6px;
+
+    color:var(--white);
+
+    font-size:15px;
+
+    font-weight:400;
+
+    opacity:.85;
+
+    word-break:break-word;
+
+}
+.progress{
+
+    margin-top:14px;
+
+    width:100%;
+
+    height:8px;
+
+    background:rgba(255,255,255,.08);
+
+    border-radius:100px;
+
+    overflow:hidden;
+
+}
+
+.progress-fill{
+
+    height:100%;
+
+    width:0;
+
+    border-radius:100px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    color:var(--primary);
+
+    font-size:11px;
+
+    font-weight:700;
+
+    background:linear-gradient(
+        90deg,
+        #c89b3c 0%,
+        var(--gold) 50%,
+        #f4d27b 100%
+    );
+
+    transition:width .25s ease;
+
+    position:relative;
+
+}
+
+.input-group select option {
+
+    background: var(--primary);
+
+    color: var(--white);
+
+}
+
+/* ==============================
+      TEXTAREA
+============================== */
+
+.input-group textarea {
+
+    resize: none;
+    height: 10px;
+
+    min-height: 120px;
+
+}
+/* ===========================
+      RESUME UPLOAD
+=========================== */
+
+.upload-group{
+
+    width:100%;
+
+}
+.upload-box{
+
+    width:100%;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:18px;
+
+    padding:20px;
+
+    border:2px dashed rgba(216,177,90,.3);
+
+    border-radius:18px;
+
+    cursor:pointer;
+
+    transition:.35s;
+
+    background:rgba(255,255,255,.02);
+
+}
+
+.upload-box:hover{
+
+    border-color:var(--gold);
+
+    background:rgba(216,177,90,.05);
+
+}
+
+/* Header */
+
+.upload-header{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:18px;
+
+    width:100%;
+
+}
+
+.upload-text h4{
+    color: var(--white);
+    font-size: 16px;
+    font-weight: 400; /* Change this */
+    margin: 0 0 4px;
+}
+
+.upload-text p{
+    color: rgba(255,255,255,.65);
+    font-size: 14px;
+    font-weight: 400; /* Change this */
+    margin: 0;
+}
+
+.upload-icon{
+
+    width:55px;
+
+    height:55px;
+
+    border-radius:50%;
+
+    background:rgba(216,177,90,.12);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:24px;
+
+}
+
+.upload-box input{
+
+    display:none;
+
+}/* Progress Wrapper */
+
+.progress-wrapper{
+    width:100%;
+}
+
+/* Percentage */
+
+.progress-info{
+
+    display:flex;
+
+    justify-content:flex-end;
+
+    margin-bottom:8px;
+
+}
+
+.progress-info span{
+
+    color:var(--white);
+
+    font-size:13px;
+
+    font-weight:500;
+
+    opacity:.9;
+
+}
+
+/* Progress Bar */
+
+.progress{
+
+    width:100%;
+
+    height:8px;
+
+    background:rgba(255,255,255,.08);
+
+    border-radius:100px;
+
+    overflow:hidden;
+
+}
+
+.progress-fill{
+
+    height:100%;
+
+    background:var(--gold);
+
+    border-radius:100px;
+
+    transition:width .25s ease;
+
+}
+/* ==============================
+      BUTTON
+============================== */
+
+.apply-submit {
+
+    margin-top: 15px;
+
+    height: 58px;
+
+    border: none;
+
+    border-radius: 14px;
+
+    background: linear-gradient(
+        135deg,
+        var(--gold),
+        #E9C56D
+    );
+
+    color: var(--primary);
+
+    font-size: 16px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 10px;
+
+    transition: .35s;
+
+}
+
+.apply-submit:hover {
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 15px 40px rgba(216,177,90,.35);
+
+}
+
+.apply-submit:active {
+
+    transform: scale(.98);
+
+}
+
+/* ==============================
+      SPINNER
+============================== */
+
+.spinner {
+
+    width: 18px;
+
+    height: 18px;
+
+    border: 2px solid rgba(255,255,255,.35);
+
+    border-top-color: var(--primary);
+
+    border-radius: 50%;
+
+    animation: spin .7s linear infinite;
+
+}
+
+@keyframes spin {
+
+    to {
+
+        transform: rotate(360deg);
+
+    }
+
+}
+
+/* ==============================
+      RESPONSIVE
+============================== */
+
+@media(max-width:768px){
+
+    .input-group input,
+    .input-group textarea,
+    .input-group select{
+
+        font-size:15px;
+
+    }
+
+}
+
+
+.spinner{
+
+    width:18px;
+    height:18px;
+
+    border-radius:50%;
+
+    border:2px solid
+    rgba(14,20,32,.3);
+
+    border-top-color:#0E1420;
+
+    animation:
+    spin .8s linear infinite;
+}
+
+@keyframes spin{
+
+    to{
+        transform:
+        rotate(360deg);
+    }
+}
+
+.success-alert{
+
+    position:fixed;
+
+    top:25px;
+    right:25px;
+
+    z-index:9999;
+
+    padding:18px 25px;
+
+    border-radius:14px;
+
+    background:
+    rgba(216,177,90,.15);
+
+    border:
+    1px solid #D8B15A;
+
+    color:white;
+}
+
+@media(max-width:992px){
+
+    .apply-container{
+
+        grid-template-columns:
+        1fr;
+    }
+}
+
+@media(max-width:768px){
+
+    .apply-page{
+
+        padding:100px 25px;
+    }
+}
+
+
+
+
+/* Chrome, Edge, Brave, Opera */
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+
+    -webkit-text-fill-color: var(--white) !important;
+
+    transition: background-color 9999s ease-in-out 0s;
+
+    -webkit-box-shadow: 0 0 0px 1000px transparent inset !important;
+
+    box-shadow: 0 0 0px 1000px transparent inset !important;
+
+    background-color: transparent !important;
+
+    caret-color: var(--white);
+
+}
+
+
+
+
+.error{
+
+    display:block;
+
+    margin-top:-15px;
+
+    color:#ff6b6b;
+
+    font-size:13px;
+
+    font-weight:400;
+
+}
+.input-group input.error-field,
+.input-group select.error-field{
+
+    border-bottom:2px solid #ff4d4f;
+
+}
+
+.apply-submit.success{
+
+    background:var(--gold);
+
+    color:var(--primary);
+
+    pointer-events:none;
+
+}
+
+.success-toast{
+
+    position:fixed;
+
+    top:10px;
+
+    right:40px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    padding:18px 22px;
+
+    border-radius:18px;
+
+    background:#000000;
+
+    border-left:4px solid var(--gold);
+    
+
+    box-shadow:0px 0px 2px var(--gold);       
+
+    animation:slideIn .5s ease;
+    color: var(--gold);
+    z-index:9999;
+
+}
+.success-toast h4{
+    font-weight: 500;
+}
+.success-toast span{
+    font-family: 'Horyzen';
+    color: var(--gold);
+}
+
+.success-toast p{
+    font-weight: 350;
+    color: white;
+}
+.toast-icon{
+
+    width:45px;
+
+    height:45px;
+
+    border-radius:50%;
+
+    background:var(--gold);
+
+    color:var(--primary);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-weight:700;
+
+}
+.input-group label.active,
+.input-group select:focus + label {
+    top: -10px;
+    font-size: 13px;
+    color: var(--gold);
+    letter-spacing: .5px;
+}
