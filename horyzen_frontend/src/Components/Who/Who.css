@@ -9,6 +9,9 @@
   background: black;
    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
+#extra-card{
+  display: none;
+}
 
 .about-left {
   flex: 1;
@@ -217,4 +220,8 @@
     hyphens: auto;
     font-size: 14px;
   }
+  #extra-card{
+  display: block;
+}
+
 }

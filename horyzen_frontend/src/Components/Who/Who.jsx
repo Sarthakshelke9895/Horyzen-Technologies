@@ -72,7 +72,7 @@ const Who = () => {
               you for real industry challenges.
             </p>
           </div>
-            <div className="feature-card">
+            <div className="feature-card" id='extra-card'>
             <h4>AI & Innovation</h4>
             <p>
               Building next-generation products powered

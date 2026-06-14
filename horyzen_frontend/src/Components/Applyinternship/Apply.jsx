@@ -567,7 +567,7 @@ const handleSubmit = async (e) => {
         onChange={handleChange}
     />
     <label htmlFor="github">
-        GitHub Profile / Repository
+        Linkedin Profile URL
     </label>
   {errors.github && (
     <small className="error">
